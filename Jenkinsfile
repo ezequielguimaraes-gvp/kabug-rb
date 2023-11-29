@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Building or Resolve Dependencies!'
                 // sh 'rm -f Gemfile.lock'
+                sh 'docker pull ruby'
                 sh 'bundle install'
             }
         }
